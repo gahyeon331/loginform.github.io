@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인페이지1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <style>
+    
+        * {margin: 0; padding: 0;}
+        li {list-style: none;}        
+        a {text-decoration: none; color: #333; display: block;}
+        .page {margin: 0 auto;}
+        .page::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .page div{float: left;}
+        .wrap {
+            width: 1095px;
+            height: 1080px;
+            /* background-color:dimgray; */
+            text-align: center;
+            padding: 150px 250px;
+            box-sizing: border-box;
+        }
+        .wrap img {display: block;}
+        fieldset {border: 0;}
+        legend {
+            position: absolute;
+            left: -999999px;
+        }
+        .wrap label {
+            position: absolute;
+            left: -99999999px;
+        }
+        .wrap h1 {
+            font-size: 60px;
+            color: #333;
+            margin-bottom: 65px;
+            text-align: right;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        button {
+            width: 595px;
+            height: 65px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        input[type="text"], input[type="password"] {
+            width: 595px;
+            height: 65px;
+            border: 1px solid #333;
+            box-sizing: border-box;
+            font-size: 20px;
+            padding: 0 20px;
+            margin-bottom: 25px;
+        }
+        .wrap .sign {
+            margin-bottom: 89px;
+            border: 2px solid #333;
+            background-color: #fff;
+            color: #333;
+        }
+        .wrap .naver span {color: #19CE60;}
+        .wrap .kakao span {color: #FAE100;}
+        fieldset p {
+            text-align: right;
+            margin-top: 65px;
+            box-sizing: border-box;
+        }
+        fieldset p a{
+            display: inline-block;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="img">
+            <img src="img//img01.jpg" alt="cafe" />
+        </div>
+        <div class="wrap">
+            <form action="" method="post">
+                <h1>
+                    <a href="#">COFFEE SHOP</a>
+                </h1>
+                <fieldset>
+                    <button class="sign">Sign Up</button>
+                    <legend>로그인페이지</legend>
+                    <div>
+                        <label for="id">id</label>
+                        <input type="text" id="id" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <label for="pass">비밀번호</label>
+                        <input type="password" id="pass" placeholder="Password" required>
+                    </div>
+                    <button>Login</button>
+                    <button class="naver">Login with <span>Naver</span></button>
+                    <button class="kakao">Login with <span>Kakao talk</span></button>
+                    <p>Forgot your <a href="#">username</a> / <a href="#">password</a>?</p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

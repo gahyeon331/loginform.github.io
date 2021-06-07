@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile login page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0;}
+        li {list-style: none;}
+        a {text-decoration: none; color: #333; display: block;}
+        .mobile_login {
+            width: 375px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            background: url('img/img04.jpg') center center / cover no-repeat;
+        }
+        fieldset {border: none;}
+        legend {
+            position: absolute;
+            left: -9999999px;
+        }
+        .form {
+            background-color: rgba(255,255,255,0.65);
+            margin: 10px 50px 100px;
+            padding: 60px 20px;
+            box-sizing: border-box;
+        }
+        .mobile_login h3 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 100px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .mobile_login h3 a {color: #fff;}
+        .form div label {
+            position: absolute;
+            left: -9999999px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 235px;
+            height: 40px;
+            margin-bottom: 15px;
+            border: 0;
+            padding: 0 10px;
+            box-sizing: border-box;
+        } 
+        .form button{
+            width: 235px;
+            height: 40px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .form .sign {
+            margin-bottom: 60px;
+            background-color: #fff;
+            border: 1px solid #333;
+            color: #333;
+        }
+        .form .naver span {color: #19CE60;}
+        .form .kakao span{color: #FAE100;}
+        .form p {
+            font-size: 13px;
+            text-align: right;
+        }
+        .form p a{
+            display: inline-block;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile_login">
+        <form action="" method="post">
+             <h3>
+                <a href="#">COFFEE SHOP</a>
+            </h3>
+            <div class="form">
+                <fieldset>
+                    <legend>로그인페이지</legend>
+                    <button class="sign">Sing Up</button>
+                    <div>
+                        <label for="id">id</label>
+                        <input type="text" id="id" placeholder="Username">
+                    </div>
+                    <div>
+                        <label for="pw">pw</label>
+                        <input type="password" id="pw" placeholder="Password">
+                    </div>
+                    <button class="login">Login</button>
+                    <button class="naver">Login with <span>Naver</span></button>
+                    <button class="kakao">Login with <span>Kakao talk</span></button>
+                    <p>Forgot your <a href="#">username</a> / <a href="#">password</a>?</p>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
